@@ -1,0 +1,18 @@
+.avatar {
+  position: relative;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+
+  &_status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-image: url(/src/assets/icons_svg/status_green.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

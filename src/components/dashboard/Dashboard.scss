@@ -1,0 +1,43 @@
+.dashboard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background: #F6F7FB;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &_wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &_content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 64px);
+    background: radial-gradient(
+      108% 96% at 70% 32%,
+      #fbdad909 0%,
+      #b8bfff07 0%,
+      #e3e6ff05 80%);
+    backdrop-filter: blur(3px);
+    z-index: 10;
+    overflow-x: hidden;
+    overflow-y: auto;
+  
+    &_bgLogo {
+      position: absolute;
+      top: 5.45%;
+      right: 24%;
+      width: 52.7415%;
+      height: 94.686%;
+      background-image: url(/src/assets/icons_svg/logo_gray.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      z-index: -1;
+    }
+  }
+}
